@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to right, #000428, #004e92);
+  padding: 20px;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="file"] {
+  border: none;
+}
+
+.gender-options input {
+  margin-right: 10px;
+}
+
+.subject-checkboxes input {
+  margin-right: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #004e92;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+}
+
+button:hover {
+  background-color: #003366;
+}
+
+button[type="reset"] {
+  background-color: #f44336;
+}
+
+button[type="reset"]:hover {
+  background-color: #d32f2f;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  form {
+    padding: 15px;
+    width: 90%;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 1024px) {
+  form {
+    width: 80%;
+  }
+
+  button {
+    padding: 12px 24px;
+  }
+}
+
+/* Responsive Design for Large Screens (Desktop) */
+@media (min-width: 1200px) {
+  form {
+    width: 50%;
+  }
+}
